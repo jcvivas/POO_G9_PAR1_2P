@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="728.0" prefWidth="205.0" style="-fx-background-color: #45B39D;" AnchorPane.rightAnchor="765.0">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/servicios.png" />
+               </image>
+            </ImageView>
+            <Label text="SERVICIOS">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="104.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/empleados.png" />
+               </image>
+            </ImageView>
+            <Label text="EMPLEADOS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="101.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/clientes.png" />
+               </image>
+            </ImageView>
+            <Label text="CLIENTES">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="98.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/citas.png" />
+               </image>
+            </ImageView>
+            <Label text="CITAS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="101.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/atencion.png" />
+               </image>
+            </ImageView>
+            <Label text="ATENCIONES">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="435.0" prefHeight="84.0" prefWidth="277.0">
+         <children>
+            <Label contentDisplay="CENTER" text="LISTADO DE EMPLEADOS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TableView layoutX="241.0" layoutY="223.0" prefHeight="397.0" prefWidth="690.0">
+        <columns>
+          <TableColumn prefWidth="66.0" text="CEDULA" />
+          <TableColumn prefWidth="261.0" text="NOMBRE" />
+            <TableColumn prefWidth="79.0" text="TELEFONO" />
+            <TableColumn minWidth="0.0" prefWidth="186.0" text="EMAIL" />
+            <TableColumn prefWidth="97.0" text="ESTADO" />
+        </columns>
+      </TableView>
+      <HBox layoutX="240.0" layoutY="63.0" prefHeight="153.0" prefWidth="153.0">
+         <children>
+            <ImageView fitHeight="154.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/nofoto.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="393.0" layoutY="84.0" prefHeight="58.0" prefWidth="235.0">
+         <children>
+            <Label text="...">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="384.0" layoutY="140.0" prefHeight="77.0" prefWidth="227.0" AnchorPane.bottomAnchor="511.0" AnchorPane.leftAnchor="384.0" AnchorPane.rightAnchor="359.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <Button mnemonicParsing="false" text="EDITAR">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="ELIMINAR" />
+         </children>
+         <padding>
+            <Insets right="4.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="521.0" layoutY="637.0" prefHeight="77.0" prefWidth="181.0">
+         <children>
+            <Button mnemonicParsing="false" text="AGREGAR EMPLEADO" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
